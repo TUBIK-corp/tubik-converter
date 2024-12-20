@@ -1,0 +1,8 @@
+Flask
+Pillow
+Werkzeug
+click
+itsdangerous
+Jinja2
+MarkupSafe
+Flask-Compress

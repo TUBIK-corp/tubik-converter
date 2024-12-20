@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "24008:24008"
+    environment:
+      - FLASK_ENV=production
+    restart: always
