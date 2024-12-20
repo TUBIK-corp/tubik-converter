@@ -5,8 +5,11 @@ import io
 import zipfile
 from werkzeug.utils import secure_filename
 import imghdr
+import os
 
-app = Flask(__name__)
+app = Flask(__name__,
+    static_url_path='/static',
+    static_folder='static')
 Compress(app)
 
 # Расширенный список поддерживаемых форматов

@@ -5,6 +5,8 @@ services:
     build: .
     ports:
       - "24008:24008"
+    volumes:
+      - ./app/static:/app/static
     environment:
       - FLASK_ENV=production
     restart: always
